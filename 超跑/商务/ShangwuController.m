@@ -43,7 +43,11 @@
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+}
+- (void)viewWillDisappear:(BOOL)animated{
     
+    self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.navigationBar.translucent = YES;
 }
 
 - (void)viewDidLoad {

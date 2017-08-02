@@ -255,7 +255,6 @@
         
         MarriedCar *view = [MarriedCar new];
         
-        view.hidesBottomBarWhenPushed = YES;view.hidesBottomBarWhenPushed = YES;
         view.hidesBottomBarWhenPushed = YES;
         CATransition *animation = [CATransition animation];
         animation.duration = 0.3;
