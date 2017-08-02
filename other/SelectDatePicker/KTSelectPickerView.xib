@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KTSelectPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="299"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuH-El-ZEX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htE-uL-WQJ" userLabel="横线">
+                            <rect key="frame" x="0.0" y="68" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="bXg-A1-8fx"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择用车时间" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMS-hG-AvW">
+                            <rect key="frame" x="10" y="0.0" width="300" height="69"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="69" id="vyE-xC-EB0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JMS-hG-AvW" firstAttribute="top" secondItem="KuH-El-ZEX" secondAttribute="top" id="HDP-BF-HYT"/>
+                        <constraint firstAttribute="bottom" secondItem="htE-uL-WQJ" secondAttribute="bottom" id="KSV-8a-mx9"/>
+                        <constraint firstAttribute="trailing" secondItem="htE-uL-WQJ" secondAttribute="trailing" id="N5s-jn-CZE"/>
+                        <constraint firstAttribute="height" constant="69" id="U8q-Cq-G71"/>
+                        <constraint firstAttribute="trailing" secondItem="JMS-hG-AvW" secondAttribute="trailing" constant="10" id="e0q-VX-nKU"/>
+                        <constraint firstItem="htE-uL-WQJ" firstAttribute="leading" secondItem="KuH-El-ZEX" secondAttribute="leading" id="pAY-5E-v7p"/>
+                        <constraint firstItem="JMS-hG-AvW" firstAttribute="leading" secondItem="KuH-El-ZEX" secondAttribute="leading" constant="10" id="zrB-IX-H3c"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ3-I2-tLn">
+                    <rect key="frame" x="0.0" y="247" width="154" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8vt-hl-fZr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNz-mu-LDU" userLabel="横线">
+                    <rect key="frame" x="0.0" y="248" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6wi-bK-ExZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpr-iw-77z" userLabel="横线">
+                    <rect key="frame" x="0.0" y="298" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PgD-H4-St0"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="H50-HS-hWf">
+                    <rect key="frame" x="0.0" y="69" width="320" height="180"/>
+                    <date key="date" timeIntervalSinceReferenceDate="466065242.315786">
+                        <!--2015-10-09 06:34:02 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-6x-EPK">
+                    <rect key="frame" x="160" y="248" width="160" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="7jP-qd-qhJ"/>
+                        <constraint firstAttribute="height" constant="50" id="bYb-bq-wPL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="取消">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mpr-iw-77z" firstAttribute="top" secondItem="DZ3-I2-tLn" secondAttribute="bottom" constant="1" id="4WW-4G-AwO"/>
+                <constraint firstItem="VJO-6x-EPK" firstAttribute="leading" secondItem="DZ3-I2-tLn" secondAttribute="trailing" constant="6" id="98P-33-6f4"/>
+                <constraint firstAttribute="bottom" secondItem="DZ3-I2-tLn" secondAttribute="bottom" constant="2" id="EeD-S5-5oF"/>
+                <constraint firstAttribute="trailing" secondItem="H50-HS-hWf" secondAttribute="trailing" id="FS6-nk-dE0"/>
+                <constraint firstItem="DZ3-I2-tLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hkc-ut-Gak"/>
+                <constraint firstItem="VJO-6x-EPK" firstAttribute="leading" secondItem="DZ3-I2-tLn" secondAttribute="trailing" constant="6" id="KWe-vu-5Hi"/>
+                <constraint firstItem="DZ3-I2-tLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L9r-12-CCU"/>
+                <constraint firstItem="mpr-iw-77z" firstAttribute="top" secondItem="DZ3-I2-tLn" secondAttribute="bottom" constant="1" id="RLZ-DW-6kC"/>
+                <constraint firstItem="VJO-6x-EPK" firstAttribute="leading" secondItem="DZ3-I2-tLn" secondAttribute="trailing" constant="6" id="TX0-ds-wev"/>
+                <constraint firstItem="KuH-El-ZEX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tak-F0-dvZ"/>
+                <constraint firstAttribute="bottom" secondItem="H50-HS-hWf" secondAttribute="bottom" constant="50" id="VKf-Hy-grb"/>
+                <constraint firstItem="KuH-El-ZEX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VsN-IF-V0U"/>
+                <constraint firstItem="H50-HS-hWf" firstAttribute="top" secondItem="KuH-El-ZEX" secondAttribute="bottom" id="WHD-YO-sHp"/>
+                <constraint firstAttribute="trailing" secondItem="KuH-El-ZEX" secondAttribute="trailing" id="YHA-uC-can"/>
+                <constraint firstItem="VJO-6x-EPK" firstAttribute="leading" secondItem="DZ3-I2-tLn" secondAttribute="trailing" constant="6" id="YMs-gU-KzK"/>
+                <constraint firstItem="DZ3-I2-tLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a1w-Fb-bPh"/>
+                <constraint firstItem="mpr-iw-77z" firstAttribute="top" secondItem="DZ3-I2-tLn" secondAttribute="bottom" constant="1" id="b4f-M7-7xg"/>
+                <constraint firstAttribute="trailing" secondItem="VJO-6x-EPK" secondAttribute="trailing" id="cAl-eI-TLt"/>
+                <constraint firstAttribute="bottom" secondItem="mpr-iw-77z" secondAttribute="bottom" id="dEp-96-naZ"/>
+                <constraint firstAttribute="bottom" secondItem="dNz-mu-LDU" secondAttribute="bottom" constant="50" id="dwR-L0-HbC"/>
+                <constraint firstAttribute="bottom" secondItem="DZ3-I2-tLn" secondAttribute="bottom" constant="2" id="ep9-ov-wHp"/>
+                <constraint firstAttribute="trailing" secondItem="mpr-iw-77z" secondAttribute="trailing" id="gm1-YA-dZg"/>
+                <constraint firstAttribute="trailing" secondItem="dNz-mu-LDU" secondAttribute="trailing" id="jeO-TG-50I"/>
+                <constraint firstItem="DZ3-I2-tLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kYJ-70-ulr"/>
+                <constraint firstItem="H50-HS-hWf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kcG-ck-knC"/>
+                <constraint firstItem="mpr-iw-77z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pW5-MO-D5d"/>
+                <constraint firstItem="DZ3-I2-tLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tG3-LH-mVT"/>
+                <constraint firstItem="dNz-mu-LDU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vIj-P9-DIt"/>
+                <constraint firstItem="mpr-iw-77z" firstAttribute="top" secondItem="VJO-6x-EPK" secondAttribute="bottom" id="zXY-ji-Yg6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBtn" destination="VJO-6x-EPK" id="T5p-8t-eF5"/>
+                <outlet property="confirmBtn" destination="DZ3-I2-tLn" id="AMD-RX-oh2"/>
+                <outlet property="datePicker" destination="H50-HS-hWf" id="gbS-8p-NK6"/>
+                <outlet property="lineHeight" destination="bXg-A1-8fx" id="qV3-YF-3MW"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="493.5"/>
+        </view>
+    </objects>
+</document>
